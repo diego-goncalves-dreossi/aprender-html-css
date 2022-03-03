@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    margin:0px;
+}
+header{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+main{
+    background-color: rgb(235, 228, 228);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    /*Raio da borda
+    - Só valores positivos
+    - Podemos definir um valor para cada ponta das bordas.
+    - O valor 50% faz com que o elemento fique redondo
+    */
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin:0px;
+}
+
+article{
+    background-color: white;
+    padding: 1px 10px;
+}
+
+article > aside{
+    text-decoration: underline;
+}
+
+nav{
+    background-color: rgb(102, 98, 98);
+    padding: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
+    /*Deslocamento horizontal, deslocamento vertical, espalhamento e cor*/
+    /*Podemos criar sombra externa e interna*/
+    /*Pelo DevTools conseguimos criar e vizualizar sombras fácil*/
+    
+}
+nav > a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    margin-right: 30px;
+}

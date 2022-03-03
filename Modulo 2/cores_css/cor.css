@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* { /*Configurações globais da CSS*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%;*/
+    
+}
+
+/*#0EB387,#09BD61,#14A335,#16BD13,#43B30C*/
+body{
+    /*Testando Gradiente*/
+    background-image: linear-gradient(to right,#0EB387,#09BD61);
+    
+    /*
+    background-image: linear-gradient(to top,#0EB387,#14A335,#43B30C);
+    O linear cria um gradiente em linha.
+    background-image: radial-gradient(circle,#0EB387,#14A335,#43B30C);
+    O radial-gradient(circle...) em circulo.
+    Direção (assim ou em graus 45deg), cor do começo, cor seguinte do gradiente, podemos colocar mais cores.
+    Ao lado das cores podemos definir a % dela, ou seja, o quanto ela aparecera na tela.*/
+   
+    background-attachment: fixed;
+    /*Fundo fixo, mesmo tendo conteúdo.*/
+}
+
+p{
+    text-align: justify;
+    
+}
+
+main{
+    background-color: whitesmoke;
+    width: 500px;
+    padding: 10px;
+    /*Aconchoamento */
+    margin: auto;
+    /*Essa linha vai centralizar o main*/
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #43B30C ;
+    /*Sombra do elemento. Há 4 parâmetros: quanto vai pro lado, pra baixo, espalhar, e transparência*/
+    /*Ponta redonda*/
+    
+}
+
+h1{
+   text-shadow: 1px 1px 2px black;
+   /*Sombra do texto, Há 4 parâmetros: quanto vai pro lado, pra baixo, espalhar, e transparência*/
+   color: #14A335;
+}
+
+h2{
+    color: #16BD13;
+}

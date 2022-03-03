@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+        /*Pseudo Classes*/
+        body:active{
+            color: cadetblue;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            /*Tira qualquer decoração, como o sublinhado*/
+        }
+        a:visited{
+            /*Link visitado*/
+            color: darkred;
+        }
+        a:hover{
+            /*Mouse por cima*/
+            color:orange;
+            text-decoration: underline;
+        }
+
+        a:active{
+            /*Enquanto está sendo clicado*/
+            color:darkblue;
+        }
+        /*Pseudo-Elemento*/
+        a::before{
+            content: '# ';
+        }
+        a::after{
+            /*Depois de todos os links*/
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elementos</h1>
+    <p>Agem nas classes, elementos e id, mexem no conteúdo periférico de um elemento.</p>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/diegodreossi" target="_blank">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/channel/UCC2rhKfQR8uudAKUYl4d3lg" target="_blank">Canal Youtube</a></li>
+        <li><a href="https://www.linkedin.com/in/diego-dreossi-64388320a/" target="_blank">Linkedin</a></li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html-ico.ico" type="image/x-icon">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens_criadas/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens_criadas/m.png" type="image/png">
+        <img src="imagens_criadas/g.png" alt="imagem flexivel">
+    </picture>
+
+    <h2>Repreduzir áudio</h2>
+    <p>Em HTML.</p>
+    <audio src="midia/numb_linkin_park.mp3" controls autoplay></audio>
+
+    <audio controls loop>
+        <source src="midia/well_worth_the_wait_-_silent partner.mp3" type="audio/mpeg">
+        <!--Mesmo funcionamento das imagens, a ordem importa. Caso não funcione o mp3 é só colocar os códigos pros outros tipos de audio. Nesses casos o programa tenta tocar o 1º na fila, se não conseguir segue a sequencia até conseguir.
+        ** Arquivos wavs são pesados, evitar usar.
+        -->
+    </audio> 
+    
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <!--Mesmo funcionamento das imagens, a ordem importa. Caso não funcione o mp3 é só colocar os códigos pros outros tipos de audio.-->
+    </audio> 
+</body>
+</html>

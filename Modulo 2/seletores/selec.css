@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*Regra para que os caracteres especiais não sejam um problema*/
+
+body{
+    background-color: rgb(221, 221, 211);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: forestgreen;
+}
+
+h2{
+    color: darkgreen;
+}
+
+#principal{
+    text-align: center;
+    background-color: darkslategray;
+    color: azure;
+}
+
+.basico {
+    color: blue;
+}
+
+.intermediario{
+    color: yellow;
+}
+
+.avancado{
+    color: red;
+}
